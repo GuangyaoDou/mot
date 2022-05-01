@@ -127,3 +127,16 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Editors and IDEs
+*~
+*.swp
+.idea/
+
+# OS dotfiles
+.DS_Store
+
+# Development directories
+/data
+/external
+/output

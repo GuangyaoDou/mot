@@ -64,6 +64,8 @@ def plaintextify():
                 with open(raw_path, "w", encoding="utf8") as raw_out:
                     raw_out.write("\n\n".join([doc.title] + doc.paragraphs))
             if not args.raw_only:
+                if doc.tokens is None:
+                    continue
                 with open(sents_path, "w", encoding="utf8") as sents_out:
                     sents_out.write(doc.title + "\n\n")
                     sents_out.write(
